@@ -45,18 +45,21 @@ int main() {
     age_size++;
   }
   // print out the valid values in the array
-  for(auto age: ages)
+  //for(auto age: ages)
 
   // print out the all the values in the array
 
 
   // Define an ifstream object and open the file name.txt
-  std::ifstream infile("../names.txt");
+  std::ifstream infile;  // inputFileStream
+  infile.open("../names.txt");
+
   if(infile.fail())
   {
-    std::cout << "Unable to open file name.txt.\nShutting"
+    std::cout << "Unable to open file name.txt.\nShutting" << std::endl;
     return 1;
   }
+
   std::array < std::string, kMaxSize > names;
   names.fill("-");
   int name_size = 0;
@@ -82,7 +85,7 @@ int main() {
   std::ifstream in_name_age("../name_age.txt");
   if(in_name_age.fail())
   {
-    std::cout <<
+    std::cout << "gf;l";
   }
 
   // reset age and name arrays
