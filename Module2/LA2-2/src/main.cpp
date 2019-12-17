@@ -52,7 +52,7 @@ int main() {
 
   // Define an ifstream object and open the file name.txt
   std::ifstream infile;  // inputFileStream
-  infile.open("../names.txt");
+  infile.open("../name.txt");
 
   if(infile.fail())
   {
