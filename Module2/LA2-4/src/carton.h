@@ -45,6 +45,7 @@ class Carton
     // Other Methods
     void SetMeasurements( double length, double width, double height);
     void ShowInfo();
+    double Volume() const;
 };          // must have ;
 
 #endif /* !CARTON_H_ */
