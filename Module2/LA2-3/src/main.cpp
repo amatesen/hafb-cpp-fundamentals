@@ -1,6 +1,8 @@
 #include <array>
 #include <iostream>
 #include <string>
+#include <fstream>
+
 
 using namespace std;
 
@@ -35,15 +37,49 @@ int main() {
       "Susan",  "Hal",   "Olivia", "Polly", "Roy",    "Scott"};
 
   // create a variable of type ofstream
+  std::ofstream commute_file;
+   std::ofstream towns_name_file;
+   std::ofstream utah_file;
+    // open the file commute.txt
+  commute_file.open("../commute.txt");
+  if(commute_file.fail())
+  {
+    std::cout << "Unable to open file commute_file.txt. \nShutting down\n";
+    return 1;
+  }
 
-  // open the file commute.txt
-
+  utah_file.open("../utah_file.txt");
+  if(utah_file.fail())
+  {
+    std::cout << "Unable to open file utah_file.txt. \nShutting down\n";
+    return 1;
+  }
   // write commute_minutes and commute_miles to the file commute.txt
+ towns_name_file.open("../towns_name_file.txt");
+  if(towns_name_file.fail())
+  {
+    std::cout << "Unable to open file towns_file.txt. \nShutting down\n";
+    return 1;
+  }
+  utah_file << "Ver,Min,Miles,Miles/Min,Name,Town" << std::endl;
 
+ for(int index = 0; index < kMaxSize; ++index)
+  {
+    
+    commute_file << commute_minutes[index] << "," << commute_miles[index] << std::endl;
+    towns_name_file << towns[index] << "," << names[index] << std::endl;
+    utah_file << "V1," << commute_minutes[index] << "," << commute_miles[index] << "," 
+    << static_cast<float>(commute_miles[index])/static_cast<float>(commute_minutes[index]) << ","
+    << names[index] << "," << towns[index] << std::endl;
+  }
+
+  commute_file.close();
+  utah_file.close();
+  towns_name_file.close();
   // create a variable of type ofstream and open the file town.txt
-
+ 
   // write the towns to the file town.txt
-
+  
   // create a variable of type ofstream and open the file commute_data.txt
 
   // write commute_minutes, commute_miles, and towns to the file commute.txt
