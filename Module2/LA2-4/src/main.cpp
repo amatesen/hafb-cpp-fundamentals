@@ -1,5 +1,6 @@
 #include <iostream>
 #include "carton.h"
+#include "carton_fileio.h"
 #include <array>
 const int kMaxSize = 10;
 
@@ -22,20 +23,32 @@ int main() {
 //   Carton box2(-5,89,11);
 //   box2.ShowInfo();
 //   // create an array of Cartons
-// Carton box3(6,89,11);
+//Carton box3(6,89,11);
 
 //box3.ShowInfo();
 
-std::array<Carton, kMaxSize> boxes;
-boxes[0] = Carton(11,13,12);
-boxes[0].ShowInfo();
-boxes[1].ShowInfo();
+std::array<Carton, kMaxArraySize> boxes;
+//boxes[0] = Carton(11,13,12);
 
-  
+// Read data from file
+std::string message;
+int record_size = 0;
+
+message = ReadDataFormatFile("../carton_data.txt", boxes, record_size);
+std::cout << message << std::endl;
+
+
   // add some valid elements to the array
 
   // loop through the array
+std::cout << "\nPrinting Array: " << std::endl;
+// for(auto box : boxes)
+for(auto index = 0; index < record_size; ++index)
+{
+  boxes[index].ShowInfo();
+}
 
+WriteDataToFile("../data.cvs", boxes, record_size);
   // print out the volume of packages
 
   // print out the girth of packages

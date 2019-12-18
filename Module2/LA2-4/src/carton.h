@@ -10,7 +10,7 @@
 
 #ifndef CARTON_H_
 # define CARTON_H_
-
+#pragma once
 #include <iostream>
 
 class Carton
@@ -46,6 +46,7 @@ class Carton
     void SetMeasurements( double length, double width, double height);
     void ShowInfo();
     double Volume() const;
+    void WriteData(std::ostream &out) const;
 };          // must have ;
 
 #endif /* !CARTON_H_ */
