@@ -1,21 +1,21 @@
-Min,Miles,Miles/Min,Name,Town
-22,8,0.363636,Walter,Bountiful
-51,22,0.431373,Chris,Centerville
-63,28,0.444444,Stan,Clinton
-12,2,0.166667,Mary,South Weber
-17,4,0.235294,Shelly,West Point
-93,62,0.666667,Kim,Cottonwood Heights
-45,15,0.333333,Kelly,Murray
-18,6,0.333333,George,Salt Lake City
-66,42,0.636364,Sam,South Jordan
-45,28,0.622222,Walter,West Jordan
-43,16,0.372093,Ann,American Fork
-77,43,0.558442,Laura,Lindon
-38,27,0.710526,Paul,Payson
-43,18,0.418605,Phillip,Pleasant Grove
-52,41,0.788462,Susan,Spanish Fork
-21,8,0.380952,Hal,Harrisville
-8,3,0.375,Olivia,Ogden
-19,5,0.263158,Polly,Pleasant View
-7,2,0.285714,Roy,Riverdale
-14,4,0.285714,Scott,South Ogden
+Ver,Min,Miles,Miles/Min,Name,Town
+V1,22,8,0.363636,Walter,Bountiful
+V1,51,22,0.431373,Chris,Centerville
+V1,63,28,0.444444,Stan,Clinton
+V1,12,2,0.166667,Mary,South Weber
+V1,17,4,0.235294,Shelly,West Point
+V1,93,62,0.666667,Kim,Cottonwood Heights
+V1,45,15,0.333333,Kelly,Murray
+V1,18,6,0.333333,George,Salt Lake City
+V1,66,42,0.636364,Sam,South Jordan
+V1,45,28,0.622222,Walter,West Jordan
+V1,43,16,0.372093,Ann,American Fork
+V1,77,43,0.558442,Laura,Lindon
+V1,38,27,0.710526,Paul,Payson
+V1,43,18,0.418605,Phillip,Pleasant Grove
+V1,52,41,0.788462,Susan,Spanish Fork
+V1,21,8,0.380952,Hal,Harrisville
+V1,8,3,0.375,Olivia,Ogden
+V1,19,5,0.263158,Polly,Pleasant View
+V1,7,2,0.285714,Roy,Riverdale
+V1,14,4,0.285714,Scott,South Ogden
