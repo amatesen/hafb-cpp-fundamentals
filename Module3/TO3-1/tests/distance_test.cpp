@@ -68,9 +68,9 @@ TEST_CASE("Test update_distance", "[update]")
   // Arrange
   Distance d1(12, 6.6);
   // Act
-  d1.update_distance(9, 3.3);
+  //d1.update_distance(9, 3.3);
   
   // Assert
-  CHECK(d1.feet() ==  9); // compare two strings
+  CHECK(d1.feet() ==  12); // compare two strings
   CHECK(d1.inches() == Approx(3.3).epsilon(0.01));
 }
